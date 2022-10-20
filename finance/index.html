@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>IGSX</title>
+  </head>
+  <body style="font-family: system-ui">
+    <!-- Header Start -->
+    <header class="site-header">
+      <nav class="navbar">
+        <a href="#" class="brand" style="margin: 13px">IGSX</a>
+        <ul class="navWrapper">
+          <li class="navItem"><a href="#">Portfolio</a></li>
+          <li class="navItem"><a href="#" class="active" style="color: yellow;">Now Trading</a></li>
+          <li class="navItem">
+            <a href="#"><i class="fa fa-search"></i></a>
+          </li>
+          <li class="navItem" style="position: relative;top:-3px;">
+            <img class="icon" src="./wallet.png" />
+            <a href="#" style="position: relative;top: -7px;">602.02$</a>
+          </li>
+          <li class="navItem">
+            <a href="#"><img class="icon" src="./user.png" /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Header End -->
+
+    <div class="container">
+      <main class="grid">
+        <article style="background-color: #9c9cd5; color: white">
+          <img
+            src="admin.jpg"
+            alt="Sample photo"
+            style="
+              height: 60px;
+              width: 60px;
+              border-radius: 50px;
+              padding-left: 10px;
+              padding-top: 10px;
+            "
+          />
+          <div class="text">
+            <h3>Hi, Arshiya Shakeel</h3>
+            <p>
+              Looks like you're not verified yet. Verify yourself to use the
+              full potential of
+            </p>
+            <ul class="card_ul" style="margin-left: -40px">
+              <li style="color: greenyellow">
+                <i class="fa fa-check" aria-hidden="true"></i>Verify account
+              </li>
+              <hr />
+              <li style="color: red">
+                <i class="fa fa-times" aria-hidden="true"></i>Two factor
+                authentication
+              </li>
+              <hr />
+              <li style="color: red">
+                <i class="fa fa-times" aria-hidden="true"></i>Deposit money
+              </li>
+            </ul>
+          </div>
+        </article>
+        <article>
+          <h5 class="card_icon">
+            <i class="fa fa-arrow-trend-up"></i>HOLDINGS
+          </h5>
+          <div class="text">
+            <h4 class="gray">TODAYS CHANGE</h4>
+            <p style="color: red;">
+              $-40.000<span style="font-size: 4px; margin-left: 10px;">%23.45</span> <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </p>
+            <h4 class="gray down" style="margin-top: 45%">PROFITS</h4>
+            <p>$2,985.00<span style="color: green; margin-left: 10px; font-size: 4px;">%23.45</span><i class="fa fa-caret-up" aria-hidden="true"></i></p>
+          </div>
+        </article>
+        <article>
+          <h5 class="card_icon">
+            <i class="fa fa-caret-down" aria-hidden="true"></i>QUICK BUY
+          </h5>
+          <div class="text">
+            <form>
+              <label for="quick buy">Asset name</label>
+              <select>
+                <option value="volvo">Zinsk</option>
+                <option value="volvo">Zinsk</option>
+              </select>
+              <label for="quick buy">Price</label>
+              <input type="number" />
+              <label for="quick buy">Quantity</label>
+              <input type="number" />
+              <input class="button" type="submit" />
+            </form>
+          </div>
+        </article>
+        <article>
+          <h5 class="card_icon">
+            <i class="fa fa-caret-up" aria-hidden="true"></i>QUICK SELL
+          </h5>
+          <div class="text">
+            <form>
+              <label for="quick sell">Asset name</label>
+              <select>
+                <option value="volvo">Zinsk</option>
+                <option value="volvo">Zinsk</option>
+              </select>
+              <label for="quick sell">Price</label>
+              <input type="number" />
+              <label for="quick sell">Quantity</label>
+              <input type="number" />
+              <input class="button" type="submit" style="background-color: red;"/>
+            </form>
+          </div>
+        </article>
+      </main>
+    </div>
+    <div class="container">
+      <header class="section2">
+        <h1 class="section2Header">ASSETS</h1>
+      </header>
+    </div>
+    <div class="grid_container">
+      <div id="grid">
+        <div id="item1">
+          <div class="form_tags">
+            <h5 class="card_icon">
+              <i class="fa fa-arrow-trend-up"></i>OPEN ORDERS
+            </h5>
+            <p>
+              TOTAL OPEN ORDER AMOUNT:
+              <span style="color: rgb(255, 214, 8)">145,267,23$</span>
+            </p>
+          </div>
+          <table id="customers">
+            <tr>
+              <th>Type</th>
+              <th>Asset Name</th>
+              <th>Balance</th>
+              <th>Amount</th>
+              <th>Order Date</th>
+            </tr>
+            <tr>
+              <td><img class="green_arrow" src="./green_arrow.png">Buy </td>
+              <td>Zinsk</td>
+              <td>-0.125 USD</td>
+              <td style="color: red;">-0.000242 BTC</td>
+              <td class="crd">22.02.25 <span class="crud"><i class="fa fa-times" aria-hidden="true"></i><i class="fa fa-edit"></i></span></td>
+            </tr>
+            <tr>
+              <td><img class="red_arrow" src="./red_arrow.png">Sell</td>
+              <td>Zinsk</td>
+              <td>-0.125 USD</td>
+              <td style="color: green;">-0.000242 BTC</td>
+              <td class="crd" style="color: red;">22.02.25 <span class="crud"><i class="fa fa-times" aria-hidden="true"></i><i class="fa fa-edit"></i></span></td>
+            </tr>
+            <tr>
+              <td><img class="green_arrow" src="./green_arrow.png">Buy</td>
+              <td>Zinsk</td>
+              <td>-0.125 USD</td>
+              <td style="color: red;">-0.000242 BTC</td>
+              <td class="crd">22.02.25 <span class="crud"><i class="fa fa-times" aria-hidden="true"></i><i class="fa fa-edit"></i></span></td>
+            </tr>
+            <tr>
+              <td><img class="red_arrow" src="./red_arrow.png">Sell</td>
+              <td>Zinsk</td>
+              <td>-0.125 USD</td>
+              <td style="color: green;">-0.000242 BTC</td>
+              <td class="crd" style="color: red;">22.02.25 <span class="crud"><i class="fa fa-times" aria-hidden="true"></i><i class="fa fa-edit"></i></span></td>
+            </tr>
+            <tr>
+              <td><img class="green_arrow" src="./green_arrow.png">Buy</td>
+              <td>Zinsk</td>
+              <td>-0.125 USD</td>
+              <td style="color: red;">-0.000242 BTC</td>
+              <td class="crd">22.02.25 <span class="crud"><i class="fa fa-times" aria-hidden="true"></i><i class="fa fa-edit"></i></span></td>
+            </tr>
+          </table>
+        </div>
+        <div id="item2">
+          <div class="form_tags">
+            <h5 class="card_icon">
+              <i class="fa fa-caret-down" aria-hidden="true"></i>BUY TRANSATION
+            </h5>
+            <p>
+              TOTAL BUY AMOUNT:
+              <span style="color: rgb(255, 214, 8)">145,267,23$</span>
+            </p>
+          </div>
+          <table id="customers">
+            <tr>
+              <th>Type</th>
+              <th>Asset Name</th>
+              <th>Balance</th>
+              <th>Amount</th>
+              <th>Order Date</th>
+            </tr>
+            <tr>
+              <td><img class="green_arrow" src="./green_arrow.png">Buy</td>
+              <td>Zinsk</td>
+              <td>-0.125 USD</td>
+              <td style="color: green;">-0.000242 BTC</td>
+              <td style="color: red;">22.02.25</td>
+            </tr>
+            <tr>
+              <td><img class="green_arrow" src="./green_arrow.png">Buy</td>
+              <td>Zinsk</td>
+              <td>-0.125 USD</td>
+              <td style="color: green;">-0.000242 BTC</td>
+              <td style="color: red;">22.02.25</td>
+            </tr>
+            <tr>
+              <td><img class="green_arrow" src="./green_arrow.png">Buy</td>
+              <td>Zinsk</td>
+              <td>-0.125 USD</td>
+              <td style="color: green;">-0.000242 BTC</td>
+              <td style="color: red;">22.02.25</td>
+            </tr>
+            <tr>
+              <td><img class="green_arrow" src="./green_arrow.png">Buy</td>
+              <td>Zinsk</td>
+              <td>-0.125 USD</td>
+              <td style="color: green;">-0.000242 BTC</td>
+              <td style="color: red;">22.02.25</td>
+            </tr>
+            <tr>
+              <td><img class="green_arrow" src="./green_arrow.png">Buy</td>
+              <td>Zinsk</td>
+              <td>-0.125 USD</td>
+              <td style="color: green;">-0.000242 BTC</td>
+              <td style="color: red;">22.02.25</td>
+            </tr>
+          </table>
+        </div>
+        <div id="item3">
+          <div class="form_tags">
+            <h5 class="card_icon">
+              <i class="fa fa-caret-up" aria-hidden="true"></i>SELL TRANSATION
+            </h5>
+            <p>
+              TOTAL SELL AMOUNT:
+              <span style="color: rgb(255, 214, 8)">145,267,23$</span>
+            </p>
+          </div>
+          <table id="customers">
+            <tr>
+              <th>Type</th>
+              <th>Asset Name</th>
+              <th>Balance</th>
+              <th>Amount</th>
+              <th>Order Date</th>
+            </tr>
+            <tr>
+              <td><img class="red_arrow" src="./red_arrow.png">Sell</td>
+              <td>Zinsk</td>
+              <td>-0.125 USD</td>
+              <td style="color: red;">-0.000242 BTC</td>
+              <td>22.02.25</td>
+            </tr>
+            <tr>
+              <td><img class="red_arrow" src="./red_arrow.png">Sell</td>
+              <td>Zinsk</td>
+              <td>-0.125 USD</td>
+              <td style="color: red;">-0.000242 BTC</td>
+              <td>22.02.25</td>
+            </tr>
+            <tr>
+              <td><img class="red_arrow" src="./red_arrow.png">Sell</td>
+              <td>Zinsk</td>
+              <td>-0.125 USD</td>
+              <td style="color: red;">-0.000242 BTC</td>
+              <td>22.02.25</td>
+            </tr>
+            <tr>
+              <td><img class="red_arrow" src="./red_arrow.png">Sell</td>
+              <td>Zinsk</td>
+              <td>-0.125 USD</td>
+              <td style="color: red;">-0.000242 BTC</td>
+              <td>22.02.25</td>
+            </tr>
+            <tr>
+              <td><img class="red_arrow" src="./red_arrow.png">Sell</td>
+              <td>Zinsk</td>
+              <td>-0.125 USD</td>
+              <td style="color: red;">-0.000242 BTC</td>
+              <td>22.02.25</td>
+            </tr>
+          </table>
+        </div>
+        <div id="item4">
+          <div class="form_tags">
+            <h5 class="card_icon">
+              <i class="fa fa-arrow-trend-up"></i>HOLDINGS
+            </h5>
+          </div>
+          <div class="flex">
+            <div class="graph">
+              <img
+                src="./green_graph.png"
+                style="width: 283px; margin-top: 15px; margin-right: 17px"
+              />
+            </div>
+            <div class="graph-text">
+              <h1 style="color: #3769bf">Dwayne Jhonson</h1>
+              <p>
+                10.20H$ <i class="fa fa-caret-up" aria-hidden="true"></i
+                ><span>10.23 (%23.55)</span>
+              </p>
+              <p>Studio: Sony</p>
+              <p>Genre: Action/Adventure</p>
+            </div>
+            <div class="graph">
+              <img src="./bar_chart.png" style="width: 254px" />
+            </div>
+            <div class="graph_list">
+              <ul class="graph_ul">
+                <li>
+                  <span style="margin-right: 25px;">Dwayne Jhonson</span> <b>%23.35</b
+                  ><i class="fa fa-caret-up" aria-hidden="true"></i>
+                </li>
+                <li>
+                  <span style="margin-right: 25px;">Dwayne Jhonson</span> <b>%23.35</b
+                  ><i class="fa fa-caret-up" aria-hidden="true"></i>
+                </li>
+                <li>
+                  <span style="margin-right: 25px;">Dwayne Jhonson</span><b>%23.35</b
+                  ><i class="fa fa-caret-up" aria-hidden="true"></i>
+                </li>
+                <li>
+                  <span style="margin-right: 100px;">Others</span><b>%23.35</b
+                  ><i class="fa fa-caret-up" aria-hidden="true"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer style="background-color: #131f23;display: flex;justify-content: space-evenly;padding: 44px 0px;color: white;">
+      <div class="footer_logo">
+        <a class="logo" href="#">IGSX</a>
+      </div>
+      <div class="help_links">
+        <h1>Help</h1>
+        <ul>
+          <li>What is HSX?</li>
+          <li>Help Topics</li>
+          <li>FAQs</li>
+          <li>Glossary</li>
+        </ul>
+      </div>
+
+      <div class="help_links">
+        <h1>About HSX</h1>
+        <ul>
+          <li>About HSX</li>
+          <li>Contact Us</li>
+          <li>Media & Press Releases</li>
+          <li>Privacy Policy</li>
+        </ul>
+      </div>
+
+      <div>
+        <h1>What is IGSX all about?</h1>
+        <ul>
+          <li>Hollywod Stock Exchange</li>
+          <li>MarketTM where you can</li>
+        </ul>
+      </div>
+
+    </footer>
+    <script src="./index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"></script>
+  </body>
+</html>
